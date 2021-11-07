@@ -1,0 +1,40 @@
+{
+    "name": "etiamdapibusvehicula/etiamdapibusvehicula",
+    "keywords": [
+        "etiamdapibusvehicula"
+    ],
+    "description": "etiamdapibusvehicula",
+    "homepage": "https://github.com/etiamdapibusvehicula/etiamdapibusvehicula",
+    "license": "EUPL-1.2",
+    "authors": [
+        {
+            "name": "etiamdapibusvehicula",
+            "homepage": "http://www.etiamdapibusvehicula.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"etiamdapibusvehicula\\Bundle\\Bundle\\": "src/etiamdapibusvehicula/Bundle/Bundle"},
+        "exclude-from-classmap": ["/Tests/"]
+    },
+    "require": {
+        "php": "~7.4.14 || ^8.0",
+        "oro/commerce": "4.2.*"
+    },
+    "repositories": {
+        "oro": {
+            "type": "composer",
+            "url": "https://packagist.orocrm.com"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpmd/phpmd": "^2.8",
+        "phpro/grumphp": "^1.1.0",
+        "phpspec/phpspec": "^6.1",
+        "phpstan/phpstan": "0.12.91",
+        "php-parallel-lint/php-parallel-lint": "^1.0",
+        "enlightn/security-checker": "^1.9",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    }
+}
